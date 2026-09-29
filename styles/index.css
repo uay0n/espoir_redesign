@@ -120,3 +120,138 @@ main .hero .bg .slogan p {
     font-size: 1.875em; color: #875055;
     text-align: center;
 }
+/* 베스트 시작 */
+main .best {
+    padding: 50px 100px; 
+}
+main .best h2 {
+    font-size: 1.875em; font-weight: 700;
+    color: #C22026; padding-bottom: 20px;
+    text-align: center;
+}
+main .best ul {
+    display: flex; height: 546px;
+    justify-content: space-between;
+}
+main .best ul li {}
+main .best ul li a {}
+main .best ul li a .thum {
+    width: 415px; height: 450px;
+}
+main .best ul li:nth-child(1) a .thum { 
+    background: url(../image/best_1.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li:nth-child(2) a .thum { 
+    background: url(../image/best_2.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li:nth-child(3) a .thum { 
+    background: url(../image/best_3.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li:nth-child(4) a .thum { 
+    background: url(../image/best_4.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li:nth-child(1):hover a .thum { 
+    background: url(../image/best_1_h.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li:nth-child(2):hover a .thum { 
+    background: url(../image/best_2_h.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li:nth-child(3):hover a .thum { 
+    background: url(../image/best_3_h.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li:nth-child(4):hover a .thum { 
+    background: url(../image/best_4_h.png) no-repeat center center;
+    background-size: cover;
+}
+main .best ul li a .info {
+    display: flex; justify-content: center;
+    align-items: center; flex-flow: column;
+    gap: 20px; height: 96px;
+}
+main .best ul li a .info .name {
+    font-size: 1.125em;
+}
+main .best ul li a .info .emp_pri {
+    display: flex; gap: 5px; 
+    justify-content: center; align-items: center;
+}
+main .best ul li a .info .emp_pri .emp {
+    font-size: 0.75; color: #C22026; font-weight: 500;
+    border: 1px solid #C22026; padding: 2px 5px;
+}
+main .best ul li a .info .emp_pri .price {
+    font-size: 0.938em;
+}
+/* 미니배너시작 */
+main .mini_banner {
+    background: #C22026; padding: 15px 0px;
+}
+main .mini_banner p {
+    text-align: center; color: #fff;
+    font-size: 0.813em; font-weight: 300;
+}
+/* 포인트시작 */
+main .point {
+    height: 792px; display: flex;
+}
+main .point .point_cta {
+    flex: 1; padding: 50px 40px;
+    display: flex; flex-flow: column; justify-content: space-between;
+}
+main .point .point_cta .top {}
+main .point .point_cta .top h2 {
+    color: #C22026; font-family: 'Cormorant Garamond';
+    font-size: 5em; font-weight: 700; padding-bottom: 10px;
+}
+main .point .point_cta .top p {
+    color: #ADADAD; font-size: 0.938em;
+
+}
+main .point .point_cta .middle {
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+main .point .point_cta .middle p {
+    font-family: 'Cormorant Garamond'; font-style: italic;
+    font-size: 9.375em; color: #ADADAD;
+}
+main .point .point_cta .middle p img {}
+main .point .point_cta .bottom {
+    display: flex; justify-content: space-between;
+}
+main .point .point_cta .bottom .left {
+    display: flex; flex-flow: column; align-items: flex-end;
+}
+main .point .point_cta .bottom .left p {
+    font-size: 1.25em; color: #ADADAD;
+    font-weight: 500;
+}
+main .point .point_cta .bottom .left .arrow {
+    display: flex; justify-content: center;
+    align-items: center;
+}
+main .point .point_cta .bottom .left .arrow p {
+    color: #C22026; font-weight: 500;
+}
+main .point .point_cta .bottom .left .arrow img {}
+main .point .point_cta .bottom .title {
+    font-family: 'Cormorant Garamond'; font-weight: 700;
+    font-style: italic; font-size: 5em; color: #C22026;
+}
+main .point .custom .bottom .title > span {
+    color: #ADADAD; font-family: 'Cormorant Garamond';
+    font-style: normal; font-weight: 700;
+}
+main .point .model {
+    background: url(../image/point.png) no-repeat center center;
+    background-size: cover; flex: 1;
+}
+main .personal:hover {background: rgba(0,0,0,0.2);}
+main .custom:hover {background: rgba(0,0,0,0.2);}
