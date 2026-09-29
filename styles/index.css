@@ -1,1 +1,122 @@
 /* 에스쁘아 css */
+header {
+    position: fixed; width: 100%;
+    z-index: 999;
+}
+header .top_banner {
+    background: #C22026;
+    padding: 5px 20px; position: relative;
+    text-align: center; overflow: hidden;
+    max-height: 50px; transition: 0.4s;
+}
+header .top_banner p {
+    font-size: 0.75em; color: #fff;
+    
+}
+header .top_banner .close {
+    position: absolute; top: 2px; right: 20px;
+}
+header .top_banner .close img {}
+header .top_banner.hide {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* 네비시작 */
+header nav {
+    height: 70px; position: relative;
+    padding: 0 100px; display: flex; justify-content: space-between;
+    background: #FFFFFF;
+}
+header nav .menu {
+    display: flex; align-items: center; gap: 40px;
+}
+header nav .menu li {}
+header nav .menu li a {
+    font-size: 0.875em; color: #212121;
+}
+header nav h1 {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); width: 200px;
+}
+header nav h1 img {
+    width: 100%;
+}
+header nav .search_login {
+    display: flex; align-items: center; gap: 40px;
+}
+header nav .search_login li {}
+header nav .search_login li a {}
+header nav .search_login li a img {}
+/* 히어로 시작 */
+main {}
+main .hero {
+    padding: 0 20px; 
+}
+main .hero .bg {
+    background: #FDF8F8; position: relative;
+    height: 100vh;
+}
+main .hero .bg .pic {
+    display: flex; justify-content: space-between;
+    height: 100%; overflow: hidden;
+}
+main .hero .bg .pic .left {
+    display: flex; gap: 50px;
+    align-items: center; justify-content: center;
+}
+main .hero .bg .pic .left li {}
+main .hero .bg .pic .left li img {}
+main .hero .bg .pic .right {
+    display: flex; gap: 50px;
+    align-items: center;
+}
+main .hero .bg .pic .right li {}
+main .hero .bg .pic .right li img {}
+main .hero .bg .person {
+    position: absolute; bottom: 0;
+    left: 50%; transform: translate(-120%, 0%); width: 200px;
+}
+.pic .left {
+    animation: floatLeft 5s ease-in-out infinite;
+}
+.pic .right {
+    animation: floatRight 5s ease-in-out infinite;
+}
+@keyframes floatLeft {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes floatRight {
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+}
+main .hero .bg .person img {}
+main .hero .bg .slogan {
+    position: absolute; top: 80%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content
+}
+main .hero .bg .slogan h2 {
+    font-family: 'Playball'; font-size: 8em;
+    color: rgba(255,255,255,0.8);
+    text-shadow:
+    0px 5px 8px rgba(211, 63, 63, 0.15),
+    0px -2px 2px rgba(255, 255, 255, 0.8),
+    0px 2px 2px rgba(245, 101, 115, 0.4);
+}
+main .hero .bg .slogan p {
+    font-family: 'Cormorant Garamond'; font-weight: 500;
+    font-size: 1.875em; color: #875055;
+    text-align: center;
+}
