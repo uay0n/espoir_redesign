@@ -203,7 +203,7 @@ main .point_wrap {
     position: relative;
 }
 main .point {
-    height: 792px;
+    height: 850px;
     position: sticky;
     top: 80px; display: flex;
 }
@@ -269,7 +269,7 @@ main .point .model,
 main .point .custom {
     position: absolute;
     top: 0;
-    height: 792px;
+    height: 850px;
     width: 33.333%;
 }
 /* 카테고리 시작 */
@@ -287,21 +287,26 @@ main .category .top h2 {
 }
 main .category .top .sub {
     display: flex; gap: 25px;
+    padding-bottom: 50px;
 }
 main .category .top .sub li {
-    padding: 10px 40px; background: #fff;
+    background: #fff;
     border-radius: 50px;
 }
 main .category .top .sub li a {
-    color: #C22026; line-height: 1.2;
-    letter-spacing: -0.05em;
+    color: #C22026; line-height: 1.2; display: block;
+    letter-spacing: -0.05em; padding: 10px 40px;
 }
 main .category .top .sub .active {
     background: none; border : 1px solid #fff;
 }
 main .category .top .sub .active a {color: #fff;}
-main .category .bottom {}
-main .category .bottom li {}
+main .category .bottom {
+    display: flex;
+}
+main .category .bottom li {
+    flex: 1;
+}
 main .category .bottom li a {}
 main .category .bottom li a .thum {}
 main .category .bottom li a .info {}

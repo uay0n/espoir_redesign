@@ -12,20 +12,42 @@ gsap.set(".personal", { y: 0 });
 gsap.set(".model", { y: 300 });
 gsap.set(".custom", { y: 500 });
 
-gsap.timeline({
-    scrollTrigger: {
-        trigger: ".point_wrap",
-        start: "top center",
-        end: "bottom-=600 center",
-        scrub: 1
+gsap.fromTo(".personal", 
+    { y: 0 }, 
+    {
+        y: 0,
+        scrollTrigger: {
+            trigger: ".point_wrap",
+            start: "top top",
+            end: "bottom-=400 center",
+            scrub: 1,
+            markers: true
+        }
     }
-})
-.to(".personal", {
-    y: 0
-}, 0)
-.to(".model", {
-    y: 0
-}, 0)
-.to(".custom", {
-    y: 0
-}, 0);
+);
+
+gsap.fromTo(".model", 
+    { y: 300 }, 
+    {
+        y: 0,
+        scrollTrigger: {
+            trigger: ".point_wrap",
+            start: "top top",
+            end: "bottom-=400 center",
+            scrub: 1,
+        }
+    }
+);
+
+gsap.fromTo(".custom", 
+    { y: 500 }, 
+    {
+        y: 0,
+        scrollTrigger: {
+            trigger: ".point_wrap",
+            start: "top top",
+            end: "bottom-=400 center",
+            scrub: 1,
+        }
+    }
+);
