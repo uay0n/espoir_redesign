@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jua&family=Noto+Sans+KR:wght@100..900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="./script/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <header>
@@ -106,50 +108,107 @@
         <section class="mini_banner">
             <p>누구나 같은 아름다움을 가질 필요는 없으니까. 에스쁘아는 각자의 컬러와 취향, 분위기에 집중해 나에게 가장 잘 어울리는 메이크업을 발견하고 나만의 아름다움을 완성하는 순간을 함께합니다.</p>
         </section>
-        <section class="point">
-            <a href="#" class="personal point_cta">
-                <div class="top">
-                    <h2>PERSONAL</h2>
-                    <p>퍼스널 컬러 전문가와 함께 나의 피부톤과 분위기를 분석해<br>가장 잘 어울리는 컬러와 메이크업을 제안합니다.</p>
-                </div>
-                <div class="middle">
-                    <p>(</p>
-                    <p><img src="./image/personal.png" alt="파운데이션질감"></p>
-                    <p>)</p>
-                </div>
-                <div class="bottom">
-                    <div class="left">
-                        <p>퍼스널 컬러 진단</p>
-                        <div class="arrow">
-                            <p>예약하기</p>
-                            <img src="./image/arrow.svg" alt="화살표">
-                        </div>
+        <div class="point_wrap">
+            <section class="point">
+                <a href="#" class="personal point_cta">
+                    <div class="top">
+                        <h2>PERSONAL</h2>
+                        <p>퍼스널 컬러 전문가와 함께 나의 피부톤과 분위기를 분석해<br>가장 잘 어울리는 컬러와 메이크업을 제안합니다.</p>
                     </div>
-                    <p class="title">COLOR</p>
-                </div>
-            </a>
-            <div class="model"></div>
-            <a href="#" class="custom point_cta">
-                <div class="top">
-                    <h2>CUSTOM</h2>
-                    <p>메이크업 전문가와 함께 나의 취향과 스타일을 담아<br>원하는 컬러와 텍스처로 나만의 메이크업을 완성합니다.</p>
-                </div>
-                <div class="middle">
-                    <p>(</p>
-                    <p><img src="./image/custom.png" alt="립스틱질감"></p>
-                    <p>)</p>
-                </div>
-                <div class="bottom">
-                    <div class="left">
-                        <p>나만의 화장품 만들기</p>
-                        <div class="arrow">
-                            <p>예약하기</p>
-                            <img src="./image/arrow.svg" alt="화살표">
-                        </div>
+                    <div class="middle">
+                        <p>(</p>
+                        <p><img src="./image/personal.png" alt="파운데이션질감"></p>
+                        <p>)</p>
                     </div>
-                    <p class="title"><span>&</span>PLAY</p>
-                </div>
-            </a>
+                    <div class="bottom">
+                        <div class="left">
+                            <p>퍼스널 컬러 진단</p>
+                            <div class="arrow">
+                                <p>예약하기</p>
+                                <img src="./image/arrow.svg" alt="화살표">
+                            </div>
+                        </div>
+                        <p class="title">COLOR</p>
+                    </div>
+                </a>
+                <div class="model"></div>
+                <a href="#" class="custom point_cta">
+                    <div class="top">
+                        <h2>CUSTOM</h2>
+                        <p>메이크업 전문가와 함께 나의 취향과 스타일을 담아<br>원하는 컬러와 텍스처로 나만의 메이크업을 완성합니다.</p>
+                    </div>
+                    <div class="middle">
+                        <p>(</p>
+                        <p><img src="./image/custom.png" alt="립스틱질감"></p>
+                        <p>)</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="left">
+                            <p>나만의 화장품 만들기</p>
+                            <div class="arrow">
+                                <p>예약하기</p>
+                                <img src="./image/arrow.svg" alt="화살표">
+                            </div>
+                        </div>
+                        <p class="title"><span>&</span>PLAY</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+        <section class="category">
+            <div class="top">
+                <h2>CATEGORY</h2>
+                <ul class="sub">
+                    <li class="active"><a href="#">FACE</a></li>
+                    <li><a href="#">LIP</a></li>
+                    <li><a href="#">EYE</a></li>
+                    <li><a href="#">OTHER</a></li>
+                </ul>
+            </div>
+            <ul class="bottom">
+                <li><a href="#">
+                    <div class="thum"></div>
+                    <div class="info">
+                        <h3>비글로우 파운데이션 SPF27 PA++<br>[로젤라이트 글로우 컬렉션]</h3>
+                        <p class="price">42,000원</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="thum"></div>
+                    <div class="info">
+                        <h3>비벨벳 파운데이션 SPF22 PA++</h3>
+                        <p class="price">42,000원</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="thum"></div>
+                    <div class="info">
+                        <h3>비글로우 파운데이션 SPF27 PA++</h3>
+                        <p class="price">42,000원</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="thum"></div>
+                    <div class="info">
+                        <h3>비글로우 스틱 파운데이션 SPF50+ PA++++</h3>
+                        <p class="price">32,000원</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="thum"></div>
+                    <div class="info">
+                        <h3>더마 커버 블레미쉬 밤</h3>
+                        <p class="price">32,000원</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="thum"></div>
+                    <div class="info">
+                        <h3>메이크업 본딩 프라이머</h3>
+                        <p class="price">28,000원</p>
+                    </div>
+                </a></li>
+            </ul>
         </section>
     </main>
 </body>

@@ -127,7 +127,7 @@ main .best {
 main .best h2 {
     font-size: 1.875em; font-weight: 700;
     color: #C22026; padding-bottom: 20px;
-    text-align: center;
+    text-align: center; letter-spacing: -0.05em;
 }
 main .best ul {
     display: flex; height: 546px;
@@ -198,8 +198,14 @@ main .mini_banner p {
     font-size: 0.813em; font-weight: 300;
 }
 /* 포인트시작 */
+main .point_wrap {
+    height: 2200px;
+    position: relative;
+}
 main .point {
-    height: 792px; display: flex;
+    height: 792px;
+    position: sticky;
+    top: 80px; display: flex;
 }
 main .point .point_cta {
     flex: 1; padding: 50px 40px;
@@ -255,3 +261,49 @@ main .point .model {
 }
 main .personal:hover {background: rgba(0,0,0,0.2);}
 main .custom:hover {background: rgba(0,0,0,0.2);}
+main .personal { left: 0; }
+main .model { left: 33.333%; }
+main .custom { left: 66.666%; }
+main .point .personal,
+main .point .model,
+main .point .custom {
+    position: absolute;
+    top: 0;
+    height: 792px;
+    width: 33.333%;
+}
+/* 카테고리 시작 */
+main .category {
+    background: #C22026; padding: 50px 50px;
+}
+main .category .top {
+    display: flex; flex-flow: column;
+    justify-content: center; gap: 40px;
+    align-items: center; 
+}
+main .category .top h2 {
+    font-weight: 800; font-size: 1.875em;
+    color: #fff; letter-spacing: -0.05em;
+}
+main .category .top .sub {
+    display: flex; gap: 25px;
+}
+main .category .top .sub li {
+    padding: 10px 40px; background: #fff;
+    border-radius: 50px;
+}
+main .category .top .sub li a {
+    color: #C22026; line-height: 1.2;
+    letter-spacing: -0.05em;
+}
+main .category .top .sub .active {
+    background: none; border : 1px solid #fff;
+}
+main .category .top .sub .active a {color: #fff;}
+main .category .bottom {}
+main .category .bottom li {}
+main .category .bottom li a {}
+main .category .bottom li a .thum {}
+main .category .bottom li a .info {}
+main .category .bottom li a .info h3 {}
+main .category .bottom li a .info h3 p {}
