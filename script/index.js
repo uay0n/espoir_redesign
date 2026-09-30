@@ -8,18 +8,18 @@ closeBtn.addEventListener('click', function(){
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.set(".personal", { y: 0 });
-gsap.set(".model", { y: 300 });
-gsap.set(".custom", { y: 500 });
+gsap.set(".personal", { y: -1000 });
+gsap.set(".model", { y: 500 });
+gsap.set(".custom", { y: 1000 });
 
 gsap.fromTo(".personal", 
-    { y: 0 }, 
+    { y: -1000 }, 
     {
         y: 0,
         scrollTrigger: {
             trigger: ".point_wrap",
             start: "top top",
-            end: "bottom-=400 center",
+            end: "bottom-=1000 center",
             scrub: 1,
             markers: true
         }
@@ -27,26 +27,26 @@ gsap.fromTo(".personal",
 );
 
 gsap.fromTo(".model", 
-    { y: 300 }, 
-    {
-        y: 0,
-        scrollTrigger: {
-            trigger: ".point_wrap",
-            start: "top top",
-            end: "bottom-=400 center",
-            scrub: 1,
-        }
-    }
-);
-
-gsap.fromTo(".custom", 
     { y: 500 }, 
     {
         y: 0,
         scrollTrigger: {
             trigger: ".point_wrap",
             start: "top top",
-            end: "bottom-=400 center",
+            end: "bottom-=1000 center",
+            scrub: 1,
+        }
+    }
+);
+
+gsap.fromTo(".custom", 
+    { y: 1000 }, 
+    {
+        y: 0,
+        scrollTrigger: {
+            trigger: ".point_wrap",
+            start: "top top",
+            end: "bottom-=1000 center",
             scrub: 1,
         }
     }

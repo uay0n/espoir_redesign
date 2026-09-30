@@ -272,6 +272,14 @@ main .point .custom {
     height: 850px;
     width: 33.333%;
 }
+.point_clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
 /* 카테고리 시작 */
 main .category {
     background: #C22026; padding: 50px 50px;
@@ -305,10 +313,36 @@ main .category .bottom {
     display: flex;
 }
 main .category .bottom li {
-    flex: 1;
+    flex: 1; height: 546px;
 }
 main .category .bottom li a {}
-main .category .bottom li a .thum {}
+main .category .bottom li a .thum {
+    height: 450px;
+}
 main .category .bottom li a .info {}
 main .category .bottom li a .info h3 {}
 main .category .bottom li a .info h3 p {}
+main .category .bottom li:nth-child(1) a .thum { 
+    background: url(../image/cate_1.png) no-repeat center center;
+    background-size: cover;
+}
+main .category .bottom li:nth-child(2) a .thum { 
+    background: url(../image/cate_2.png) no-repeat center center;
+    background-size: cover;
+}
+main .category .bottom li:nth-child(3) a .thum { 
+    background: url(../image/cate_3.png) no-repeat center center;
+    background-size: cover;
+}
+main .category .bottom li:nth-child(4) a .thum { 
+    background: url(../image/cate_4.png) no-repeat center center;
+    background-size: cover;
+}
+main .category .bottom li:nth-child(5) a .thum { 
+    background: url(../image/cate_5.png) no-repeat center center;
+    background-size: cover;
+}
+main .category .bottom li:nth-child(6) a .thum { 
+    background: url(../image/cate_6.png) no-repeat center center;
+    background-size: cover;
+}
