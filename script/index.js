@@ -18,8 +18,8 @@ gsap.fromTo(".personal",
         y: 0,
         scrollTrigger: {
             trigger: ".point_wrap",
-            start: "top top",
-            end: "bottom-=1000 center",
+            start: "top 50%",
+            end: "bottom-=1500 center",
             scrub: 1,
             markers: true
         }
@@ -32,8 +32,8 @@ gsap.fromTo(".model",
         y: 0,
         scrollTrigger: {
             trigger: ".point_wrap",
-            start: "top top",
-            end: "bottom-=1000 center",
+            start: "top 50%",
+            end: "bottom-=1500 center",
             scrub: 1,
         }
     }
@@ -45,8 +45,8 @@ gsap.fromTo(".custom",
         y: 0,
         scrollTrigger: {
             trigger: ".point_wrap",
-            start: "top top",
-            end: "bottom-=1000 center",
+            start: "top 50%",
+            end: "bottom-=1500 center",
             scrub: 1,
         }
     }
