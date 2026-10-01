@@ -21,7 +21,7 @@ gsap.fromTo(".personal",
             start: "top 50%",
             end: "bottom-=1500 center",
             scrub: 1,
-            markers: true
+            markers: false
         }
     }
 );
@@ -51,3 +51,10 @@ gsap.fromTo(".custom",
         }
     }
 );
+/* top 버튼 작동 */
+document.querySelector('.top_btn').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

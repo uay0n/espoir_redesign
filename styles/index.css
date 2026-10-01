@@ -26,7 +26,7 @@ header .top_banner.hide {
 header nav {
     height: 70px; position: relative;
     padding: 0 100px; display: flex; justify-content: space-between;
-    background: #FFFFFF;
+    background: #FFFFFF; 
 }
 header nav .menu {
     display: flex; align-items: center; gap: 40px;
@@ -50,12 +50,10 @@ header nav .search_login li a {}
 header nav .search_login li a img {}
 /* 히어로 시작 */
 main {}
-main .hero {
-    padding: 0 20px; 
-}
+main .hero {}
 main .hero .bg {
-    background: #FDF8F8; position: relative;
-    height: 100vh;
+    background: #FEF4F4; position: relative;
+    height: 100vh; padding: 0 20px; 
 }
 main .hero .bg .pic {
     display: flex; justify-content: space-between;
@@ -417,4 +415,211 @@ main .season li:nth-child(3) a .thum {
 main .season li:nth-child(4) a .thum {
     background: url(../image/season_4.png) no-repeat center center;
     background-size: cover;
+}
+/* 룩북시작 */
+main .lookbook {
+    padding: 80px 40px;
+}
+main .lookbook .look_wrap {
+    height: 608px; display: flex;
+}
+main .lookbook .left {
+    background: url(../image/look_left.png) no-repeat center center;
+    background-size: cover; padding: 10px;
+    flex: 0.8; display: flex; justify-content: flex-end;
+    align-items: flex-start; flex-flow: column;
+}
+main .lookbook .left p {
+    color: #fff; font-weight: 300;
+    font-size: 1.25em; letter-spacing: -0.1em;
+    padding-left: 5px; 
+}
+main .lookbook .left h3 {
+    color: #fff; font-family: 'Cormorant Garamond';
+    font-size: 3.125em; font-weight: 700;
+}
+main .lookbook .left h3 span {
+    color: #fff; font-family: 'Cormorant Garamond';
+    font-style: italic;
+}
+main .lookbook .middle {
+    background: url(../image/look_middle.png) no-repeat center center;
+    background-size: cover;
+    flex: 1; padding: 10px;
+    display: flex; justify-content: flex-end;
+    align-items: flex-end; flex-flow: column;
+}
+main .lookbook .middle h3 {
+    color: #fff; font-family: 'Cormorant Garamond';
+    font-size: 3.125em;
+}
+main .lookbook .middle h3 span {
+    color: #fff; font-family: 'Cormorant Garamond';
+    font-style: italic;
+}
+main .lookbook .right {
+    flex: 1; background: #F5F5F5;
+    display: flex; flex-flow: column; gap: 15px;
+    justify-content: center; align-items: center;
+}
+main .lookbook .right h3 {
+    font-family: 'Cormorant Garamond'; font-weight: 700;
+    font-size: 2.5em; color: #C22026; letter-spacing: -0.05em;
+}
+main .lookbook .right .big_chat {
+    background: url(../image/big_chat.png) no-repeat center center;
+    background-size: contain; width: 554px; height: 292px;
+    display: flex; justify-content: center; align-items: center;
+}
+main .lookbook .right .big_chat p {
+    height: 209px; width: 174.62px;
+}
+main .lookbook .right .big_chat p img {
+    width: 100%;
+}
+main .lookbook .right .small_chat {
+    background: url(../image/small_chat.png) no-repeat center center;
+    background-size: contain; width: 554px; height: 68px;
+    display: flex; justify-content: center; align-items: center;
+    flex-flow: column; gap: 5px; padding: 50px 40px;
+}
+main .lookbook .right .small_chat * {
+    font-size: 0.938em;
+}
+main .lookbook .right .small_chat .name {}
+main .lookbook .right .small_chat .price {
+    font-weight: 700;
+}
+main .lookbook .right .send {
+    display: flex; justify-content: space-between;
+    width: 520px; background: #fff; border-radius: 50px; 
+    border: 1px solid #ADADAD ; align-items: center;
+    padding: 5px 5px 5px 14px;
+}
+main .lookbook .right .send .ment {
+    font-size: 0.938em; letter-spacing: -0.02em;
+}
+main .lookbook .right .send .ment::after {
+    content: '';
+    border-right: 1px solid #06637B;
+    padding-right: 4px;
+    margin-right: 4px;
+}
+main .lookbook .right .send .btn {
+    width: 22px; height: 22px;
+}
+main .lookbook .right .send .btn img {
+    width: 100%;
+}
+/* 컬렉션 시작 */
+main .collection {
+    display: flex; height: 800px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+main .collection .coll {
+    flex: 1; display: flex; flex-flow: column;
+    justify-content: center; align-items: center;
+    gap: 15px; position: relative; overflow: hidden;
+}
+main .collection .coll::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.3s;
+}
+main .collection .coll:hover::before {
+    opacity: 1;
+}
+main .collection .coll:hover h3 {opacity: 1;}
+main .collection .coll:hover p {opacity: 1;}
+main .collection .coll h3 {
+    font-size: 2.5em; font-family: 'Cormorant Garamond';
+    font-weight: 700; font-style: italic; color: #fff;
+    text-align: center; letter-spacing: -0.05em;
+    opacity: 0; transition: 0.3s; z-index: 2;
+}
+main .collection .coll p {
+    font-size: 1.25em; color: #fff;
+    letter-spacing: -0.1em; z-index: 2;
+    opacity: 0; transition: 0.3s;
+}
+main .collection .rose {
+    background: url(../image/rose_bg.png) no-repeat center center;
+    background-size: cover;
+}
+main .collection .beglow {
+    background: url(../image/beglow_bg.png) no-repeat center center;
+    background-size: cover;
+}
+main .collection .galaxy {
+    background: url(../image/galaxy_bg.png) no-repeat center center;
+    background-size: cover;
+}
+/* 푸터시작 */
+footer {
+    background: #000; padding: 50px 50px;
+}
+footer .top {
+    display: flex; justify-content: center; align-items: center;
+    flex-flow: column; gap: 10px;
+}
+footer .top * {color: #fff;}
+footer .top .logo {}
+footer .top .logo img {}
+footer .top .f_menu {
+    display: flex; font-size: 0.813em; gap: 10px;
+    font-weight: 700; letter-spacing: -0.02em; justify-content: center;
+    border-bottom: 1px solid #fff; width: 100%; padding-bottom: 20px;
+} 
+footer .top .f_menu li {}
+footer .top .f_menu li a {}
+footer .middle {
+    padding: 20px 0; display: flex; justify-content: space-between;
+    align-items: center;
+}
+footer .middle * {color: #fff;}
+footer .middle .left {
+    display: flex; gap: 10px;
+}
+footer .middle .left li {}
+footer .middle .left li a {
+    font-size: 0.813em;
+}
+footer .middle .right {
+    display: flex; gap: 10px;
+}
+footer .middle .right a {}
+footer .middle .right a img {}
+footer .bottom {
+    padding-bottom: 20px; display: flex; flex-flow: column;
+    gap: 5px;
+}
+footer .bottom * {
+    color: #737373;
+}
+footer .bottom li {}
+footer .bottom li span {
+    font-size: 0.813em; letter-spacing: -0.02em; 
+}
+footer .copy {
+    font-size: 0.813em; letter-spacing: -0.02em; 
+    color: #fff;
+}
+footer .bold a {font-weight: 900;}
+footer .bold {font-weight: 900; color: #fff;}
+footer .under {text-decoration: underline;}
+/* cta */
+.top_btn {
+    position: fixed; background: #fff;
+    bottom: 30px; right: 50px; width: 40px; height: 40px;
+    border-radius: 100px;
+}
+.top_btn img {
+    transform: rotate(-90deg);
 }
